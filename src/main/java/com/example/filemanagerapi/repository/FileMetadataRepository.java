@@ -32,4 +32,5 @@ public interface FileMetadataRepository extends JpaRepository<FileMetadata, Long
      */
     @Query("SELECT SUM(f.size) FROM FileMetadata f WHERE f.user = :user")
     Long sumSizeByUser(User user);
+
 }

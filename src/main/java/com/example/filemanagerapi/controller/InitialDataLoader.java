@@ -20,7 +20,7 @@ public class InitialDataLoader implements CommandLineRunner {
             user.setPassword("password");
 
             userRepository.save(user);
-            System.out.println("Test user created: " + user.getId());
+            System.out.println("Test user created: " + user.getId() + ", email: " + user.getEmail());
         }
     }
 }
